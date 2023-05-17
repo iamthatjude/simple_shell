@@ -145,10 +145,10 @@ void *_realloc(void *, unsigned int, unsigned int);
 
 int bfree(void **);
 
-int interactive(info_t *);
-int is_delim(char, char *);
-int _isalpha(int);
-int _atoi(char *);
+int interactive_func(info_t *);
+int delim_check(char, char *);
+int alpha_check(int);
+int convert_to_int(char *);
 
 int _erratoi(char *);
 void print_error(info_t *, char *);
@@ -156,9 +156,9 @@ int print_d(int, int);
 char *convert_number(long int, int, int);
 void remove_comments(char *);
 
-int _myexit(info_t *);
-int _mycd(info_t *);
-int _myhelp(info_t *);
+int alternative_exit(info_t *);
+int alternative_cd(info_t *);
+int alternative_help(info_t *);
 
 int _myhistory(info_t *);
 int _myalias(info_t *);
