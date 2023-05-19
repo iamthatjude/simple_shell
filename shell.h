@@ -171,11 +171,11 @@ void clear_info(info_t *);
 void set_info(info_t *, char **);
 void free_info(info_t *, int);
 
-char *_getenv(info_t *, const char *);
-int _myenv(info_t *);
-int _mysetenv(info_t *);
-int _myunsetenv(info_t *);
-int populate_env_list(info_t *);
+char *get_environmen_variable(info_t *, const char *);
+int display_environment(info_t *);
+int set_environment_variable(info_t *);
+int unset_environment_variable(info_t *);
+int populate_environment_list(info_t *);
 
 char **get_environ(info_t *);
 int _unsetenv(info_t *, char *);
