@@ -160,8 +160,8 @@ int alternative_exit(info_t *);
 int alternative_cd(info_t *);
 int alternative_help(info_t *);
 
-int _myhistory(info_t *);
-int _myalias(info_t *);
+int display_history(info_t *);
+int alias_cmd(info_t *);
 
 ssize_t get_input(info_t *);
 int _getline(info_t *, char **, size_t *);
