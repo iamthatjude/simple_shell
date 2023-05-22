@@ -163,9 +163,9 @@ int alternative_help(info_t *);
 int display_history(info_t *);
 int alias_cmd(info_t *);
 
-ssize_t get_input(info_t *);
-int _getline(info_t *, char **, size_t *);
-void sigintHandler(int);
+ssize_t get_input_line(custom_info_t *info)
+int custom_getline(custom_info_t *info, char **ptr, size_t *length);
+void sigintHandler(__attribute__((unused))int sigNum);
 
 void clear_info(info_t *);
 void set_info(info_t *, char **);
