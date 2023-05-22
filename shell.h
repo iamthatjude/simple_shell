@@ -132,9 +132,9 @@ char *_strdup(const char *);
 void _puts(char *);
 int _putchar(char);
 
-char *_strncpy(char *, char *, int);
-char *_strncat(char *, char *, int);
-char *_strchr(char *, char);
+char *my_strncpy(char *dest, char *src, int n);
+char *my_strncat(char *dest, char *src, int n);
+char *my_strchr(char *s, char c);
 
 char **strtow(char *, char *);
 char **strtow2(char *, char);
