@@ -117,10 +117,10 @@ char *find_path(info_t *, char *, char *);
 
 int loophsh(char **);
 
-void _eputs(char *);
-int _eputchar(char);
-int _putfd(char c, int fd);
-int _putsfd(char *str, int fd);
+void print_string(char *);
+int print_character(char c);
+int print_character_to_fd(char c, int fd);
+int print_string_to_fd(char *str, int fd);
 
 int _strlen(char *);
 int _strcmp(char *, char *);
