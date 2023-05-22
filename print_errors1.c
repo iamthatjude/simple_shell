@@ -53,7 +53,7 @@ void print_error_message(info_t *info, char *estr)
  */
 int print_decimal(int input, int fd)
 {
-	void (*print_char)(char) = putchar;
+	void (*print_char)(char) = print_char;
 	int i, count = 0;
 	unsigned int absolute_value, current;
 
