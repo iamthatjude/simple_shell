@@ -150,11 +150,11 @@ int delim_check(char, char *);
 int alpha_check(int);
 int convert_to_int(char *);
 
-int _erratoi(char *);
-void print_error(info_t *, char *);
-int print_d(int, int);
-char *convert_number(long int, int, int);
-void remove_comments(char *);
+int convert_string_to_int(char *s);
+void print_error_message(info_t *info, char *estr);
+int print_decimal(int input, int fd);
+char *convert_number_to_string(long int num, int base, int flags);
+void remove_comment(char *buf);
 
 int alternative_exit(info_t *);
 int alternative_cd(info_t *);
