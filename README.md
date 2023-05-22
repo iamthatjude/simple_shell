@@ -8,7 +8,7 @@
 
 
 
-### Authors
+## Authors
 
 * Josiah Ogulu <[JoeSireCodes](https://github.com/JoeSireCodes)>
 * Jude Okpara <[iamthatjude](https://github.com/iamthatjude)>
